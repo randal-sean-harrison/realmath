@@ -119,7 +119,7 @@ $(function () {
       let eightWallUrl = "https://ndlearning.8thwall.app/ar-math-viewer/" + encodedUriComponent;
 
       // Clear any previous qr code
-      $("#qr-code").empty("");
+      $("#qr-code").empty();
 
       // Generate and write new QR code
       new QRCode(document.querySelector("#qr-code"), {
