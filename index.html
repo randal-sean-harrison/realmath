@@ -43,20 +43,16 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Main local styles -->
-    <link rel="stylesheet" href="css/main.css">
-
     <!-- qrcode maker -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-    <!-- MathLive CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/mathlive/dist/mathlive.core.css">
-    <link rel="stylesheet" href="https://unpkg.com/mathlive/dist/mathlive.css">
 
-    <!-- MathJax -->
-    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+    <!-- mathlive CSS via jsDelivr (always latest) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mathlive/dist/mathlive.core.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mathlive/dist/mathlive.css" type="text/css">
 
+    <!-- Main local styles -->
+    <link rel="stylesheet" href="css/main.css">
 
     <title>RealMath AR</title>
 
@@ -364,8 +360,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
 
-    <!-- MathLive JS -->
-    <script src="https://unpkg.com/mathlive/dist/mathlive.min.js"></script>
+    <!-- mathlive JS -->
+    <script src="https://cdn.jsdelivr.net/npm/mathlive/dist/mathlive.min.js" type="application/javascript"></script>
 
     <!-- qr code generator -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -382,7 +378,7 @@
         );
 
         // Zeno Rocha's clipboard initialized ----------------------------
-        // new ClipboardJS('.copy-btn');
+        new ClipboardJS('.copy-btn');
 
       });
       // document.ready closes
